@@ -25,12 +25,14 @@ NameNetsHierarchically=1
 PowerPortNamesTakePriority=0
 AutoSheetNumbering=1
 AutoCrossReferences=1
+NewIndexingOfSheetSymbols=0
 PushECOToAnnotationFile=1
 DItemRevisionGUID=
 ReportSuppressedErrorsInMessages=0
 FSMCodingStyle=eFMSDropDownList_OneProcess
 FSMEncodingStyle=eFMSDropDownList_OneHot
 IsProjectConflictPreventionWarningsEnabled=0
+IsVirtualBomDocumentRemoved=0
 OutputPath=
 LogFolderPath=
 ManagedProjectGUID=
@@ -218,7 +220,7 @@ DocumentUniqueId=QQXNKBWI
 
 [Document11]
 DocumentPath=CPU Clock.SchDoc
-AnnotationEnabled=0
+AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -235,7 +237,7 @@ DocumentUniqueId=TWXVQAKQ
 
 [Document12]
 DocumentPath=Flash Memory.SchDoc
-AnnotationEnabled=0
+AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -1362,6 +1364,7 @@ Type122=2
 Type123=1
 Type124=1
 Type125=1
+Type126=1
 Type127=1
 
 [ERC Connection Matrix]
