@@ -25,14 +25,12 @@ NameNetsHierarchically=1
 PowerPortNamesTakePriority=0
 AutoSheetNumbering=1
 AutoCrossReferences=1
-NewIndexingOfSheetSymbols=0
 PushECOToAnnotationFile=1
 DItemRevisionGUID=
 ReportSuppressedErrorsInMessages=0
 FSMCodingStyle=eFMSDropDownList_OneProcess
 FSMEncodingStyle=eFMSDropDownList_OneHot
 IsProjectConflictPreventionWarningsEnabled=0
-IsVirtualBomDocumentRemoved=0
 OutputPath=
 LogFolderPath=
 ManagedProjectGUID=
@@ -186,7 +184,7 @@ DocumentUniqueId=HEQSOHWW
 
 [Document9]
 DocumentPath=Ethernet Controller.SchDoc
-AnnotationEnabled=0
+AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -203,7 +201,7 @@ DocumentUniqueId=VJEEZIKS
 
 [Document10]
 DocumentPath=LCD Display.SchDoc
-AnnotationEnabled=0
+AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -254,7 +252,7 @@ DocumentUniqueId=OUCNGZPV
 
 [Document13]
 DocumentPath=Voltage Supervisor.SchDoc
-AnnotationEnabled=0
+AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -271,7 +269,7 @@ DocumentUniqueId=NJGRLQRE
 
 [Document14]
 DocumentPath=RF Antenna.SchDoc
-AnnotationEnabled=0
+AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -288,7 +286,7 @@ DocumentUniqueId=GONNHMDV
 
 [Document15]
 DocumentPath=RTC Clock.SchDoc
-AnnotationEnabled=0
+AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -1364,7 +1362,6 @@ Type122=2
 Type123=1
 Type124=1
 Type125=1
-Type126=1
 Type127=1
 
 [ERC Connection Matrix]
