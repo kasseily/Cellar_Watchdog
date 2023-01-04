@@ -59,7 +59,7 @@ AnnotateOrder=1
 DoLibraryUpdate=0
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
+ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
@@ -438,6 +438,23 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=VVOHXXYQ
+
+[Document24]
+DocumentPath=Cellar Watchdog NEW.PcbDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=KKKHZECC
 
 [GeneratedDocument1]
 DocumentPath=Project Outputs for Cellar Watchdog\Design Rule Check - Cellar Watchdog.html
@@ -1437,8 +1454,8 @@ GlobalIndexSortLocation=0
 
 [PrjClassGen]
 CompClassManualEnabled=0
-CompClassManualRoomEnabled=0
-NetClassAutoBusEnabled=1
+CompClassManualRoomEnabled=1
+NetClassAutoBusEnabled=0
 NetClassAutoCompEnabled=0
 NetClassAutoNamedHarnessEnabled=0
 NetClassManualEnabled=1
