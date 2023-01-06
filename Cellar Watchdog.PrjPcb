@@ -25,12 +25,14 @@ NameNetsHierarchically=1
 PowerPortNamesTakePriority=0
 AutoSheetNumbering=1
 AutoCrossReferences=1
+NewIndexingOfSheetSymbols=0
 PushECOToAnnotationFile=1
 DItemRevisionGUID=
 ReportSuppressedErrorsInMessages=0
 FSMCodingStyle=eFMSDropDownList_OneProcess
 FSMEncodingStyle=eFMSDropDownList_OneHot
 IsProjectConflictPreventionWarningsEnabled=0
+IsVirtualBomDocumentRemoved=0
 OutputPath=
 LogFolderPath=
 ManagedProjectGUID=
@@ -453,10 +455,6 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=KKKHZECC
-
-[GeneratedDocument1]
-DocumentPath=Project Outputs for Cellar Watchdog\Design Rule Check - Cellar Watchdog.html
-DItemRevisionGUID=
 
 [Configuration1]
 Name=Sources
@@ -1416,6 +1414,7 @@ Type122=2
 Type123=1
 Type124=1
 Type125=1
+Type126=1
 Type127=1
 
 [ERC Connection Matrix]
