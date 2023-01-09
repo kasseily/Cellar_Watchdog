@@ -437,10 +437,6 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=KKKHZECC
 
-[GeneratedDocument1]
-DocumentPath=Project Outputs for Cellar Watchdog\Design Rule Check - Cellar Watchdog NEW.html
-DItemRevisionGUID=
-
 [Configuration1]
 Name=Sources
 ParameterCount=0
