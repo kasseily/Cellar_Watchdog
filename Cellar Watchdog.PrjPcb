@@ -1431,7 +1431,7 @@ GlobalIndexSortOrder=3
 GlobalIndexSortLocation=0
 
 [PrjClassGen]
-CompClassManualEnabled=0
+CompClassManualEnabled=1
 CompClassManualRoomEnabled=1
 NetClassAutoBusEnabled=0
 NetClassAutoCompEnabled=0
