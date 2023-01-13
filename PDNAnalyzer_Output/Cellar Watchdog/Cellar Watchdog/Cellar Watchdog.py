@@ -1,6 +1,6 @@
 designFile = "C:/Users/Public/Documents/Altium/Projects/Cellar_Watchdog/PDNAnalyzer_Output/Cellar Watchdog/odb.tgz"
 
-powerNets = ["VBUS", "VUSB_RAW", "MAINSW", "V_USB", "LEDK", "VIN", "+3V3", "+1V8", "+3V"]
+powerNets = ["VBUS", "VUSB_RAW", "MAINSW", "V_USB", "LEDK", "VIN", "+3V3", "VDDA3V3", "VDDIO", "+1V8", "+3V"]
 
 groundNets = ["GND"]
 
@@ -62,6 +62,51 @@ excitation = [
 {
 "id": "6",
 "type": "load",
+"power_pins": [ ("U5", "3") ],
+"ground_pins": [ ("U5", "28"), ("U5", "29"), ("U5", "33") ],
+"current": 0.055,
+"Rpin": 2.72727272727273,
+}
+,
+{
+"id": "7",
+"type": "load",
+"power_pins": [ ("U5", "17") ],
+"ground_pins": [ ("U5", "28"), ("U5", "29"), ("U5", "33") ],
+"current": 0.015,
+"Rpin": 10,
+}
+,
+{
+"id": "8",
+"type": "load",
+"power_pins": [ ("U6", "3") ],
+"ground_pins": [ ("U6", "1") ],
+"current": 0.0003,
+"Rpin": 333.333333333333,
+}
+,
+{
+"id": "9",
+"type": "load",
+"power_pins": [ ("U6", "4") ],
+"ground_pins": [ ("U6", "1") ],
+"current": 0.2,
+"Rpin": 0.5,
+}
+,
+{
+"id": "10",
+"type": "load",
+"power_pins": [ ("U7", "3") ],
+"ground_pins": [ ("U7", "4") ],
+"current": 0.0005,
+"Rpin": 200,
+}
+,
+{
+"id": "11",
+"type": "load",
 "power_pins": [ ("U4", "8") ],
 "ground_pins": [ ("U4", "4"), ("U4", "9") ],
 "current": 0.03,
@@ -69,7 +114,7 @@ excitation = [
 }
 ,
 {
-"id": "7",
+"id": "12",
 "type": "load",
 "power_pins": [ ("DS1", "12") ],
 "ground_pins": [ ("DS1", "11") ],
@@ -78,7 +123,7 @@ excitation = [
 }
 ,
 {
-"id": "8",
+"id": "13",
 "type": "load",
 "power_pins": [ ("DS1", "A") ],
 "ground_pins": [ ("DS1", "K") ],
@@ -87,7 +132,7 @@ excitation = [
 }
 ,
 {
-"id": "9",
+"id": "14",
 "type": "load",
 "power_pins": [ ("VR1", "5"), ("VR1", "7"), ("VR1", "8") ],
 "ground_pins": [ ("VR1", "6"), ("VR1", "9") ],
@@ -96,7 +141,7 @@ excitation = [
 }
 ,
 {
-"id": "10",
+"id": "15",
 "type": "load",
 "power_pins": [ ("VR2", "6"), ("VR2", "1") ],
 "ground_pins": [ ("VR2", "5"), ("VR2", "4"), ("VR2", "2") ],
@@ -105,7 +150,7 @@ excitation = [
 }
 ,
 {
-"id": "11",
+"id": "16",
 "type": "load",
 "power_pins": [ ("VR3", "3"), ("VR3", "1") ],
 "ground_pins": [ ("VR3", "2") ],
@@ -117,49 +162,49 @@ excitation = [
 
 voltage_regulators = [
 {
-"id": "12",
+"id": "17",
 "type": "linear",
 
 "in": [ ("VR1", "5"), ("VR1", "7"), ("VR1", "8") ],
 "out": [ ("VR1", "1"), ("VR1", "2"), ("VR1", "3") ],
 "ref": [ ("VR1", "6"), ("VR1", "9") ],
 
-"v2": 12671.9,
+"v2": 15379.9,
 "i1": 1E-09,
 "Ro": 0,
 "Rpin": 0,
 }
 ,
 {
-"id": "13",
+"id": "18",
 "type": "linear",
 
 "in": [ ("VR2", "6"), ("VR2", "1") ],
 "out": [ ("VR2", "3") ],
 "ref": [ ("VR2", "5"), ("VR2", "4"), ("VR2", "2") ],
 
-"v2": 12670.3,
+"v2": 15378.4,
 "i1": 2E-06,
 "Ro": 0,
 "Rpin": 0,
 }
 ,
 {
-"id": "14",
+"id": "19",
 "type": "linear",
 
 "in": [ ("VR3", "3"), ("VR3", "1") ],
 "out": [ ("VR3", "5") ],
 "ref": [ ("VR3", "2") ],
 
-"v2": 12671.5,
+"v2": 15379.6,
 "i1": 2E-07,
 "Ro": 0,
 "Rpin": 0,
 }
 ,
 {
-"id": "15",
+"id": "20",
 "type": "linear",
 
 "in": [ ("FB1", "1") ],
@@ -173,7 +218,7 @@ voltage_regulators = [
 }
 ,
 {
-"id": "16",
+"id": "21",
 "type": "linear",
 
 "in": [ ("F1", "1") ],
@@ -187,7 +232,7 @@ voltage_regulators = [
 }
 ,
 {
-"id": "17",
+"id": "22",
 "type": "linear",
 
 "in": [ ("S1", "1") ],
@@ -201,7 +246,7 @@ voltage_regulators = [
 }
 ,
 {
-"id": "18",
+"id": "23",
 "type": "linear",
 
 "in": [ ("S1", "A") ],
@@ -215,7 +260,7 @@ voltage_regulators = [
 }
 ,
 {
-"id": "19",
+"id": "24",
 "type": "linear",
 
 "in": [ ("Q1", "3") ],
@@ -226,6 +271,34 @@ voltage_regulators = [
 "i1": 0,
 "Ro": 1E-06,
 "Rpin": 5000,
+}
+,
+{
+"id": "25",
+"type": "linear",
+
+"in": [ ("FB3", "2") ],
+"out": [ ("FB3", "1") ],
+"ref": [],
+
+"v2": -0.09,
+"i1": 0,
+"Ro": 1E-06,
+"Rpin": 0.03,
+}
+,
+{
+"id": "26",
+"type": "linear",
+
+"in": [ ("FB4", "2") ],
+"out": [ ("FB4", "1") ],
+"ref": [],
+
+"v2": -0.09,
+"i1": 0,
+"Ro": 1E-06,
+"Rpin": 0.03,
 }
 ]
 
