@@ -21,7 +21,7 @@ TargetOutputMedium=Folder Structure
 VariantName=[No Variations]
 VariantScope=1
 CurrentConfigurationName=
-TargetPrinter=Microsoft Print to PDF
+TargetPrinter=KONICA MINOLTA bizhub C364e PCL (10.30.80.76) UPD
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputMedium1=Print Job
 OutputMedium1_Type=Printer
@@ -132,14 +132,28 @@ OutputName6=Test Point Report
 OutputCategory6=Fabrication
 OutputDocumentPath6=
 OutputVariantName6=
-OutputEnabled6=0
+OutputEnabled6=1
 OutputEnabled6_OutputMedium1=0
 OutputEnabled6_OutputMedium2=0
-OutputEnabled6_OutputMedium3=0
+OutputEnabled6_OutputMedium3=3
 OutputEnabled6_OutputMedium4=0
 OutputDefault6=0
 Configuration6_Name1=OutputConfigurationParameter1
 Configuration6_Item1=AdjacencyDistance=250000|GenerateCSVFormat=False|GenerateIPCFormat=False|GenerateSpreadSheetFormat=False|GenerateTextFormat=True|MergeNetTieNets=False|OriginPosition=Relative|OutlineLayer=56|OutputAdjancencies=False|OutputBoardOutline=False|OutputTraces=False|Record=TestPointView|ReportBottomLayerTestpoints=True|ReportTopLayerTestpoints=True|Units=Metric|DocumentPath=C:\Users\Public\Documents\Altium\Projects\Cellar_Watchdog\Cellar Watchdog.PcbDoc
+OutputType7=Board Stack Report
+OutputName7=Report Board Stack
+OutputCategory7=Fabrication
+OutputDocumentPath7=
+OutputVariantName7=
+OutputEnabled7=1
+OutputEnabled7_OutputMedium1=0
+OutputEnabled7_OutputMedium2=2
+OutputEnabled7_OutputMedium3=2
+OutputEnabled7_OutputMedium4=0
+OutputDefault7=0
+PageOptions7=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=0|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
+Configuration7_Name1=OutputConfigurationParameter1
+Configuration7_Item1=Record=LayerStackReportView|Units=Metric|ColumnsCount=4|Column0Name=Name|Column0Title=Name|Column0Visible=True|Column1Name=Material|Column1Title=Material|Column1Visible=True|Column2Name=Thickness|Column2Title=Thickness|Column2Visible=True|Column3Name=Constant|Column3Title=Constant|Column3Visible=True|DocumentPath=C:\Users\Public\Documents\Altium\Projects\Cellar_Watchdog\Cellar Watchdog.PcbDoc
 
 [PublishSettings]
 OutputFilePath2=C:\Users\Public\Documents\Altium\Projects\Cellar_Watchdog\Project Outputs for Cellar Watchdog\Cellar Watchdog.PDF
