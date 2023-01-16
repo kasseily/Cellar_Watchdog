@@ -128,7 +128,7 @@ OutputDefault5=0
 Configuration5_Name1=OutputConfigurationParameter1
 Configuration5_Item1=AssyAdjacencyDistance=250000|AssyGenerateCSVFormat=False|AssyGenerateIPCFormat=False|AssyGenerateSpreadSheetFormat=False|AssyGenerateTextFormat=True|AssyMergeNetTieNets=False|AssyOriginPosition=Relative|AssyOutlineLayer=56|AssyOutputAdjancencies=False|AssyOutputBoardOutline=False|AssyOutputTraces=False|AssyReportBottomLayerTestpoints=True|AssyReportTopLayerTestpoints=True|AssyUnits=Metric|Record=TestPointView|DocumentPath=C:\Users\Public\Documents\Altium\Projects\Cellar_Watchdog\Cellar Watchdog.PcbDoc
 OutputType6=Test Points
-OutputName6=Copy of Test Point Report
+OutputName6=Test Point Report
 OutputCategory6=Fabrication
 OutputDocumentPath6=
 OutputVariantName6=
