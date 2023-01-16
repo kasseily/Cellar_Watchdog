@@ -1,6 +1,6 @@
 designFile = "C:/Users/Public/Documents/Altium/Projects/Cellar_Watchdog/PDNAnalyzer_Output/Cellar Watchdog/odb.tgz"
 
-powerNets = ["VBUS", "VUSB_RAW", "V_USB", "RED_A", "STAT_LED", "GRN_K", "VIN", "VCCIO", "TRXLED", "BATTSW", "V_BATT", "BATTLED", "+3V3", "VDDA3V3", "VDDIO"]
+powerNets = ["VBUS", "VUSB_RAW", "V_USB", "RED_A", "STAT_LED", "VIN", "GRN_K", "VCCIO", "TRXLED", "BATTSW", "V_BATT", "BATTLED", "+3V3", "VDDA3V3", "VDDIO", "+1V8", "+3V", "LEDLA", "LEDLK", "LEDRA", "LEDRK"]
 
 groundNets = ["GND"]
 
@@ -35,15 +35,6 @@ excitation = [
 {
 "id": "3",
 "type": "load",
-"power_pins": [ ("R7", "1") ],
-"ground_pins": [ ("R7", "2") ],
-"resistance": 1E-09,
-"Rpin": 280,
-}
-,
-{
-"id": "4",
-"type": "load",
 "power_pins": [ ("R9", "2") ],
 "ground_pins": [ ("U2", "13"), ("U2", "5") ],
 "resistance": 1E-09,
@@ -51,7 +42,7 @@ excitation = [
 }
 ,
 {
-"id": "5",
+"id": "4",
 "type": "load",
 "power_pins": [ ("R10", "2") ],
 "ground_pins": [ ("U2", "13"), ("U2", "5") ],
@@ -60,7 +51,7 @@ excitation = [
 }
 ,
 {
-"id": "6",
+"id": "5",
 "type": "load",
 "power_pins": [ ("R8", "1") ],
 "ground_pins": [ ("R8", "2") ],
@@ -69,12 +60,21 @@ excitation = [
 }
 ,
 {
+"id": "6",
+"type": "load",
+"power_pins": [ ("R7", "1") ],
+"ground_pins": [ ("R7", "2") ],
+"resistance": 1E-09,
+"Rpin": 280,
+}
+,
+{
 "id": "7",
 "type": "source",
 "power_pins": [ ("U2", "9"), ("U2", "3"), ("U2", "2") ],
 "ground_pins": [ ("U2", "13"), ("U2", "5") ],
 "voltage": 3.3,
-"Rpin": 0,
+"Rpin": 180,
 }
 ,
 {
@@ -170,31 +170,248 @@ excitation = [
 {
 "id": "18",
 "type": "load",
+"power_pins": [ ("R31", "2") ],
+"ground_pins": [ ("U5", "33"), ("U5", "29"), ("U5", "28") ],
+"resistance": 1E-09,
+"Rpin": 7500,
+}
+,
+{
+"id": "19",
+"type": "load",
+"power_pins": [ ("R32", "2") ],
+"ground_pins": [ ("U5", "33"), ("U5", "29"), ("U5", "28") ],
+"resistance": 1E-09,
+"Rpin": 7500,
+}
+,
+{
+"id": "20",
+"type": "load",
+"power_pins": [ ("R33", "2") ],
+"ground_pins": [ ("U5", "33"), ("U5", "29"), ("U5", "28") ],
+"resistance": 1E-09,
+"Rpin": 7500,
+}
+,
+{
+"id": "21",
+"type": "load",
+"power_pins": [ ("R34", "2") ],
+"ground_pins": [ ("U5", "33"), ("U5", "29"), ("U5", "28") ],
+"resistance": 1E-09,
+"Rpin": 7500,
+}
+,
+{
+"id": "22",
+"type": "load",
+"power_pins": [ ("R35", "2") ],
+"ground_pins": [ ("U5", "33"), ("U5", "29"), ("U5", "28") ],
+"resistance": 1E-09,
+"Rpin": 24750,
+}
+,
+{
+"id": "23",
+"type": "load",
+"power_pins": [ ("VR4", "5") ],
+"ground_pins": [ ("VR4", "2") ],
+"current": 0.0001,
+"Rpin": 1000,
+}
+,
+{
+"id": "24",
+"type": "load",
+"power_pins": [ ("R28", "2") ],
+"ground_pins": [ ("VR4", "2") ],
+"resistance": 1E-09,
+"Rpin": 5000,
+}
+,
+{
+"id": "25",
+"type": "load",
+"power_pins": [ ("R22", "2") ],
+"ground_pins": [ ("U3", "49") ],
+"resistance": 1E-09,
+"Rpin": 5000,
+}
+,
+{
+"id": "26",
+"type": "load",
+"power_pins": [ ("U4", "8") ],
+"ground_pins": [ ("U4", "4"), ("U4", "9") ],
+"current": 0.03,
+"Rpin": 4.44444444444444,
+}
+,
+{
+"id": "27",
+"type": "load",
+"power_pins": [ ("R24", "2") ],
+"ground_pins": [ ("U4", "4"), ("U4", "9") ],
+"resistance": 1E-09,
+"Rpin": 6666.66666666667,
+}
+,
+{
+"id": "28",
+"type": "load",
+"power_pins": [ ("R25", "2") ],
+"ground_pins": [ ("U4", "4"), ("U4", "9") ],
+"resistance": 1E-09,
+"Rpin": 6666.66666666667,
+}
+,
+{
+"id": "29",
+"type": "load",
+"power_pins": [ ("R26", "2") ],
+"ground_pins": [ ("U4", "4"), ("U4", "9") ],
+"resistance": 1E-09,
+"Rpin": 6666.66666666667,
+}
+,
+{
+"id": "30",
+"type": "load",
+"power_pins": [ ("DS1", "12") ],
+"ground_pins": [ ("DS1", "11") ],
+"current": 0.001,
+"Rpin": 100,
+}
+,
+{
+"id": "31",
+"type": "load",
+"power_pins": [ ("DS1", "A") ],
+"ground_pins": [ ("DS1", "K") ],
+"current": 0.036,
+"Rpin": 2.77777777777778,
+}
+,
+{
+"id": "32",
+"type": "load",
+"power_pins": [ ("R42", "2") ],
+"ground_pins": [ ("DS1", "11") ],
+"resistance": 1E-09,
+"Rpin": 500,
+}
+,
+{
+"id": "33",
+"type": "load",
+"power_pins": [ ("R38", "1") ],
+"ground_pins": [ ("R38", "2") ],
+"resistance": 1E-09,
+"Rpin": 135,
+}
+,
+{
+"id": "34",
+"type": "source",
+"power_pins": [ ("U5", "30") ],
+"ground_pins": [ ("U5", "33"), ("U5", "29"), ("U5", "28") ],
+"voltage": 3.3,
+"Rpin": 45,
+}
+,
+{
+"id": "35",
+"type": "source",
+"power_pins": [ ("U5", "31") ],
+"ground_pins": [ ("U5", "33"), ("U5", "29"), ("U5", "28") ],
+"voltage": 3.3,
+"Rpin": 45,
+}
+,
+{
+"id": "36",
+"type": "load",
+"power_pins": [ ("R39", "1") ],
+"ground_pins": [ ("R39", "2") ],
+"resistance": 1E-09,
+"Rpin": 135,
+}
+,
+{
+"id": "37",
+"type": "load",
 "power_pins": [ ("VR1", "8"), ("VR1", "7"), ("VR1", "5") ],
 "ground_pins": [ ("VR1", "9"), ("VR1", "6") ],
-"current": 0.0001,
-"Rpin": 3000,
+"current": 0.0048,
+"Rpin": 62.5,
+}
+,
+{
+"id": "38",
+"type": "load",
+"power_pins": [ ("VR2", "6"), ("VR2", "1") ],
+"ground_pins": [ ("VR2", "5"), ("VR2", "4"), ("VR2", "2") ],
+"current": 0.00027,
+"Rpin": 740.740740740741,
+}
+,
+{
+"id": "39",
+"type": "load",
+"power_pins": [ ("VR3", "3"), ("VR3", "1") ],
+"ground_pins": [ ("VR3", "2") ],
+"current": 0.002,
+"Rpin": 100,
 }
 ]
 
 
 voltage_regulators = [
 {
-"id": "19",
+"id": "40",
 "type": "linear",
 
 "in": [ ("VR1", "8"), ("VR1", "7"), ("VR1", "5") ],
 "out": [ ("VR1", "3"), ("VR1", "2"), ("VR1", "1") ],
 "ref": [ ("VR1", "9"), ("VR1", "6") ],
 
-"v2": -1.22287,
-"i1": 1E-09,
-"Ro": 0.135,
-"Rpin": 0.2025,
+"v2": -1.21274,
+"i1": 0.0048,
+"Ro": 0,
+"Rpin": 0,
 }
 ,
 {
-"id": "20",
+"id": "41",
+"type": "linear",
+
+"in": [ ("VR2", "6"), ("VR2", "1") ],
+"out": [ ("VR2", "3") ],
+"ref": [ ("VR2", "5"), ("VR2", "4"), ("VR2", "2") ],
+
+"v2": -2.73066,
+"i1": 0.00027,
+"Ro": 0,
+"Rpin": 0,
+}
+,
+{
+"id": "42",
+"type": "linear",
+
+"in": [ ("VR3", "3"), ("VR3", "1") ],
+"out": [ ("VR3", "5") ],
+"ref": [ ("VR3", "2") ],
+
+"v2": -1.51825,
+"i1": 0.002,
+"Ro": 0.0945,
+"Rpin": 0.063,
+}
+,
+{
+"id": "43",
 "type": "linear",
 
 "in": [ ("FB1", "1") ],
@@ -208,7 +425,7 @@ voltage_regulators = [
 }
 ,
 {
-"id": "21",
+"id": "44",
 "type": "linear",
 
 "in": [ ("S1", "1") ],
@@ -222,7 +439,7 @@ voltage_regulators = [
 }
 ,
 {
-"id": "22",
+"id": "45",
 "type": "linear",
 
 "in": [ ("Q1", "3") ],
@@ -236,7 +453,7 @@ voltage_regulators = [
 }
 ,
 {
-"id": "23",
+"id": "46",
 "type": "linear",
 
 "in": [ ("D3", "3") ],
@@ -250,21 +467,7 @@ voltage_regulators = [
 }
 ,
 {
-"id": "24",
-"type": "linear",
-
-"in": [ ("D3", "1"), ("D3", "4") ],
-"out": [ ("D3", "2") ],
-"ref": [],
-
-"v2": -2.1,
-"i1": 0,
-"Ro": 1E-06,
-"Rpin": 3.33333333333333,
-}
-,
-{
-"id": "25",
+"id": "47",
 "type": "linear",
 
 "in": [ ("Q1", "3") ],
@@ -278,7 +481,21 @@ voltage_regulators = [
 }
 ,
 {
-"id": "26",
+"id": "48",
+"type": "linear",
+
+"in": [ ("D3", "4"), ("D3", "1") ],
+"out": [ ("D3", "2") ],
+"ref": [],
+
+"v2": -2.1,
+"i1": 0,
+"Ro": 1E-06,
+"Rpin": 3.33333333333333,
+}
+,
+{
+"id": "49",
 "type": "linear",
 
 "in": [ ("D6", "1") ],
@@ -292,7 +509,7 @@ voltage_regulators = [
 }
 ,
 {
-"id": "27",
+"id": "50",
 "type": "linear",
 
 "in": [ ("S1", "2") ],
@@ -306,7 +523,7 @@ voltage_regulators = [
 }
 ,
 {
-"id": "28",
+"id": "51",
 "type": "linear",
 
 "in": [ ("D4", "1") ],
@@ -320,31 +537,59 @@ voltage_regulators = [
 }
 ,
 {
-"id": "29",
+"id": "52",
 "type": "linear",
 
 "in": [ ("FB3", "2") ],
 "out": [ ("FB3", "1") ],
 "ref": [],
 
-"v2": -0.06,
+"v2": -0.00066,
 "i1": 0,
 "Ro": 1E-06,
 "Rpin": 0.006,
 }
 ,
 {
-"id": "30",
+"id": "53",
 "type": "linear",
 
 "in": [ ("FB4", "2") ],
 "out": [ ("FB4", "1") ],
 "ref": [],
 
-"v2": -0.22,
+"v2": -0.000144,
 "i1": 0,
 "Ro": 1E-06,
 "Rpin": 0.006,
+}
+,
+{
+"id": "54",
+"type": "linear",
+
+"in": [ ("J4", "9") ],
+"out": [ ("J4", "10") ],
+"ref": [],
+
+"v2": -2.1,
+"i1": 0,
+"Ro": 1E-06,
+"Rpin": 2.5,
+}
+,
+{
+"id": "55",
+"type": "linear",
+
+"in": [ ("J4", "12") ],
+"out": [ ("J4", "11") ],
+"ref": [],
+
+"v2": -2.1,
+"i1": 0,
+"Ro": 1E-06,
+"Rpin": 2.5,
 }
 ]
 
