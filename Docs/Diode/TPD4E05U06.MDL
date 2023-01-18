@@ -1,0 +1,34 @@
+*
+* This spice model was created using the Altium Spice Model Wizard
+* Created: 08:18 on 18 January, 2023
+*
+* Component Name: TPD4E05U06
+* Component Description: 4-Channel 14V Clamp 2.5A Ipp Tvs Diode
+*
+.MODEL TPD4E05U06 D
++(
++     IS = 2.8282E-0010
++      N = 35.1692
++     RS = -3721.4286
++    CJO = 2.5095E-0012
++     VJ = 0.1000
++      M = 0.5000
++     BV = 6.5
++    IBV = 1e-3
++)
+
+* Spice model TPD4E05U06 has been assigned the following parameters:
+
+* Forward-Bias Diode Current Parameters
+*     IS: Saturation Current..................(Unit: A)
+*      N: Emission Coefficient
+*     RS: Ohmic Resistance....................(Unit: Ohm)
+
+* Reverse-Bias Junction Capacitance Parameters
+*    CJO: Zero-Bias Junction Capacitance......(Unit: F)
+*     VJ: Junction Potential..................(Unit: V)
+*      M: Grading Coefficient
+
+* Reverse-Breakdown Diode Current Parameters
+*     BV: Reverse Breakdown Voltage...........(Unit: V)
+*    IBV: Current at Breakdown Voltage........(Unit: A)

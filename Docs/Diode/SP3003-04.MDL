@@ -1,0 +1,40 @@
+
+                                    *SP3003-04 SPICE
+
+.SUBCKT SP3003 I/O1 I/O2 I/O3 I/O4 Vcc 0
+D_D1         1 Vcc Dtop 24
+D_D2         2 1 Dbot 58
+L_L1         I/O1 1  1nH
+D_D9         2 Vcc SNSP 890
+L_L5         0 2  1nH
+D_D3         3 Vcc Dtop 24
+D_D4         2 3 Dbot 58
+D_D5         4 Vcc Dtop 24
+D_D6         2 4 Dbot 58
+D_D7         5 Vcc Dtop 24
+D_D8         2 5 Dbot 58
+L_L2         I/O2 3  1nH
+L_L3         I/O3 4  1nH
+L_L4         I/O4 5  1nH
+.ENDS
+
+* Zener Diode
+.model SNSP D   (
++level = 1
++ibv = 1E-4                    is = 8.45E-18                 cjo = 1.33E-14
++n = 0.97                       rs = 890                         bv = 7.4
++eg = 1.11)
+* Top Diode
+.model Dtop D   (
++level = 1
++ibv = 1E-5                    is = 2.73E-17                 cjo = 1.27E-14
++n = 1.01                       rs = 18.95                      bv = 30
++eg = 1.11)
+* Bottom Diode
+.model Dbot D   (
++level = 1
++ibv = 1E-5                    is = 3.5E-17                  cjo = 8.6E-15
++n = 1                            rs = 52.14                     bv = 30
++eg = 1.11)
+
+
